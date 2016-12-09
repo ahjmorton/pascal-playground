@@ -1,0 +1,4 @@
+BUILD=fpc
+
+build_dir:
+	mkdir -p ./build
