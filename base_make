@@ -1,4 +1,9 @@
 BUILD=fpc
+BUILD_DIR=./build
 
-build_dir:
-	mkdir -p ./build
+all: 
+	echo Need to make a target
+
+clean:
+	find . ! -path './.git/*' -type f -perm ++x -delete -o -name "*.o" -delete
+
