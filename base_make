@@ -2,7 +2,7 @@ BUILD=fpc
 BUILD_DIR=./build
 
 all: 
-	echo Need to make a target
+	find . -name "*.pas" -exec $(BUILD) {} \;
 
 clean:
 	find . ! -path './.git/*' -type f -perm ++x -delete -o -name "*.o" -delete
