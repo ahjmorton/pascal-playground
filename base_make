@@ -5,5 +5,5 @@ all:
 	find . -name "*.pas" -exec $(BUILD) {} \;
 
 clean:
-	find . ! -path './.git/*' -type f -perm ++x -delete -o -name "*.o" -delete
+	find . ! -path './.git/*' -type f -perm ++x -delete -o -name "*.o" -delete -o -name "*.ppu" -delete
 
