@@ -8,6 +8,7 @@ var
    userGuess: integer;
 
 begin
+   Randomize;
    answer := random(Max + 1);
    repeat 
       write('Guess between 1 and ', Max, ': ');
