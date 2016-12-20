@@ -1,2 +1,5 @@
 *.o
+*.ppu
+*.s
+*.dat
 build
